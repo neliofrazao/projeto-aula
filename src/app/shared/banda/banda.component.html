@@ -4,7 +4,7 @@
       <div class="card-body">
         <h5 class="card-title">{{ banda.name }}</h5>
         <p class="card-text"> {{ banda.info }}</p>
-        <a href="#" class="btn btn-primary">Detalhe da Banda</a>
+        <a [routerLink]= "['/banda', banda.id]" class="btn btn-primary">Detalhe da Banda</a>
       </div>
     </div>
   </div>
