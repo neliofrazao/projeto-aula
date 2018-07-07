@@ -1,17 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Gravadora</a>
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home </a>
+      <li class="nav-item active" routerLinkActive = "active">
+        <a class="nav-link" [routerLink]= "['bandas']">Home </a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Rock </a>
+      <li class="nav-item" routerLinkActive= "active">
+        <a class="nav-link" [routerLink]= "['rock', 1]">Rock </a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Pagode </a>
+      <li class="nav-item"  routerLinkActive = "active">
+        <a class="nav-link" [routerLink]= "['pagode', 2]">Pagode </a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Forró </a>
+      <li class="nav-item"  routerLinkActive = "active">
+        <a class="nav-link" [routerLink]= "['forro', 3]">Forró </a>
       </li>
     </ul>
 </nav>

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-import { ListarBandas } from './listar-bandas.interface';
+import { ListarBandas } from '../shared/interface/listar-bandas.interface';
 
 @Injectable({
   providedIn: 'root'
