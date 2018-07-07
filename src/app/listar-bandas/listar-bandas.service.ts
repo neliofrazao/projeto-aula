@@ -8,7 +8,6 @@ import { ListarBandas } from './listar-bandas.interface';
   providedIn: 'root'
 })
 export class ListarBandasService {
-  private listar: Array<ListarBandas>;
 
   constructor(
     private http: HttpClient

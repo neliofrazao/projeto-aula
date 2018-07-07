@@ -21,10 +21,13 @@ export class ListarBandasComponent implements OnInit {
 
   public carregaBandas(): any {
     this.listarBandasService.carregaBanda().subscribe(
-      banda => this.listarBandas = banda
+      (banda) => {
+        this.listarBandas = banda;
+        console.log(this.listarBandas);
+      }
     );
 
-   /* setTimeout(() => {
+   /*setTimeout(() => {
       this.listarBandasService.carregaBanda().subscribe(
         banda => this.listarBandas = banda
       );

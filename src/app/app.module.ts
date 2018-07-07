@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ListarBandasModule } from './listar-bandas/listar-bandas.module';
-
+import { CategoriaModule } from './categoria/categoria.module';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -14,7 +15,9 @@ import { ListarBandasModule } from './listar-bandas/listar-bandas.module';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ListarBandasModule
+    ListarBandasModule,
+    CategoriaModule,
+    AppRoutingModule
 
   ],
   providers: [],
