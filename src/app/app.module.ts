@@ -12,14 +12,14 @@ import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.componen
 @NgModule({
   declarations: [
     AppComponent,
-    NaoEncontradoComponent,
+    NaoEncontradoComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ListarBandasModule,
     CategoriaModule,
-    AppRoutingModule
+    AppRoutingModule,
 
   ],
   providers: [],

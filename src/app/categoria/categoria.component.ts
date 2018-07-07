@@ -33,6 +33,7 @@ export class CategoriaComponent implements OnInit {
     this.categoriaService.getCategoria(this.getId).subscribe(
       (categoria) => {
         this.bandaCategoria = categoria;
+        console.log(this.bandaCategoria );
         if (!this.bandaCategoria.length) {
           this.route.navigate(['/404']);
         }

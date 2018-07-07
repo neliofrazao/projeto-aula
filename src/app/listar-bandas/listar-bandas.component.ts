@@ -23,6 +23,7 @@ export class ListarBandasComponent implements OnInit {
     this.listarBandasService.carregaBanda().subscribe(
       (banda) => {
         this.listarBandas = banda;
+        console.log(this.listarBandas);
       }
     );
 
